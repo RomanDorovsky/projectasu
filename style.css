@@ -6,19 +6,19 @@ body{
 
 @font-face {
     font-family: Headers;
-    src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+    src: url(/fonts/Comfortaa-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: TextsRegular;
-    src: url(../fonts/MPLUSRounded1c-Regular.ttf);
+    src: url(/fonts/MPLUSRounded1c-Regular.ttf);
 }
 @font-face {
     font-family: TextsBold;
-    src: url(../fonts/MPLUSRounded1c-Bold.ttf);
+    src: url(/fonts/MPLUSRounded1c-Bold.ttf);
 }
 @font-face {
     font-family: TextsExtraBold;
-    src: url(../fonts/MPLUSRounded1c-ExtraBold.ttf);
+    src: url(/fonts/MPLUSRounded1c-ExtraBold.ttf);
 }
 
 /*-----------Texts----------*/
@@ -85,7 +85,7 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../svg/start-baPC.svg);
+    background-image: url(/svg/start-baPC.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 606px;
@@ -95,7 +95,7 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../svg/authorization-baPC.svg);
+    background-image: url(/svg/authorization-baPC.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 606px;
@@ -105,7 +105,7 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../svg/home-ba.svg);
+    background-image: url(/svg/home-ba.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 625px;
@@ -116,7 +116,7 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../svg/instruction-ba.svg);
+    background-image: url(/svg/instruction-ba.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 648px;
@@ -131,7 +131,7 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../svg/question-ba.svg);
+    background-image: url(/svg/question-ba.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 648px;
@@ -239,23 +239,23 @@ button:active .button-fill{
     /*--------Background---------*/
 
     .start-ba{
-        background-image: url(../svg/start-baM.svg);
+        background-image: url(/svg/start-baM.svg);
         width: 303px;
         height: 166px;
     }
     .authorization-ba{
-        background-image: url(../svg/authorization-baM.svg);
+        background-image: url(/svg/authorization-baM.svg);
         width: 303px;
         height: 197px;
     }
     .home-ba{
-        background-image: url(../svg/home-baM.svg);
+        background-image: url(/svg/home-baM.svg);
         width: 312.5px;
         height: 340px;
         margin-top: 200px;
     }
     .instruction-ba{
-        background-image: url(../svg/instruction-baM.svg);
+        background-image: url(/svg/instruction-baM.svg);
         width: 324px;
         height: 405px; 
     }
@@ -264,7 +264,7 @@ button:active .button-fill{
         width: 324px;
     }
     .question-ba{
-        background-image: url(../svg/question-baM.svg);
+        background-image: url(/svg/question-baM.svg);
         width: 324px;
         height: 234px;
     }
