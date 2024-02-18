@@ -6,19 +6,19 @@ body{
 
 @font-face {
     font-family: Headers;
-    src: url(fonts/Comfortaa-VariableFont_wght.ttf);
+    src: url(/fonts/Comfortaa-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: TextsRegular;
-    src: url(fonts/MPLUSRounded1c-Regular.ttf);
+    src: url(/fonts/MPLUSRounded1c-Regular.ttf);
 }
 @font-face {
     font-family: TextsBold;
-    src: url(fonts/MPLUSRounded1c-Bold.ttf);
+    src: url(/fonts/MPLUSRounded1c-Bold.ttf);
 }
 @font-face {
     font-family: TextsExtraBold;
-    src: url(fonts/MPLUSRounded1c-ExtraBold.ttf);
+    src: url(/fonts/MPLUSRounded1c-ExtraBold.ttf);
 }
 
 /*-----------Texts----------*/
