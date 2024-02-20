@@ -282,6 +282,10 @@ button:active .button-fill{
 
     /*-------Buttons--------*/
 
+button:hover{
+        display: none;
+    }
+
     .student, .teacher {
         margin-bottom: 14px;
         width: 275px;
