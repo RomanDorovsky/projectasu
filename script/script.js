@@ -125,6 +125,7 @@ btnNext.addEventListener('click', (event, index) => {
         }
 
         btnNext.disabled = true
+        btnBack.disabled = false
 });
 
 renderQuestions(0)
