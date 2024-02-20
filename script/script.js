@@ -103,7 +103,7 @@ btnNo.addEventListener('change', (event) => {
 btnBack.addEventListener('click', (event, index) => {
     console.log('back')
     answers[index] = answer
-    renderQuestions(Number(questionNumber.dataset.currentStep) + 1)
+    renderQuestions(Number(questionNumber.dataset.currentStep) - 1)
     console.log(answers)
 });
 
