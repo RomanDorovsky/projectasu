@@ -281,6 +281,11 @@ button:active .button-fill{
     }
 
     /*-------Buttons--------*/
+	
+     button:hover .button-fill{
+        fill: #98B3DE;
+    }
+
 
     .student, .teacher {
         margin-bottom: 14px;
