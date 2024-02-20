@@ -1,0 +1,346 @@
+body{
+    background-color: #1E222C;
+}
+
+/*----------Fonts----------*/
+
+@font-face {
+    font-family: Headers;
+    src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: TextsRegular;
+    src: url(../fonts/MPLUSRounded1c-Regular.ttf);
+}
+@font-face {
+    font-family: TextsBold;
+    src: url(../fonts/MPLUSRounded1c-Bold.ttf);
+}
+@font-face {
+    font-family: TextsExtraBold;
+    src: url(../fonts/MPLUSRounded1c-ExtraBold.ttf);
+}
+
+/*-----------Texts----------*/
+
+h1,h2{
+    margin: 0;
+    font-family: Headers;
+    font-size: 80px;
+    color: #EFEEFF;
+    text-align: center;
+}
+h1{
+    margin-top: 5vh;
+}
+h2{
+    margin-bottom: 5vh;
+}
+.authorization, .question, .home{
+    margin-top: 5vh;
+}
+p{
+    font-family: TextsBold;
+    margin: 0;
+    color: #A7A4B2 ;
+}
+input{
+    font-family: TextsBold;
+    color: #001D5A;
+}
+::placeholder{
+    color: rgb(00,29,90,70%)
+}
+.instruction{
+    margin-top: 5vh;
+}
+.instruction-text{
+    margin-top: 25px;
+    margin-bottom: 67px;
+    width: 578px;
+    height: 555px;
+    font-size: 30px;
+    font-family: TextsRegular;
+    line-height: 122.5%;
+}
+.question-text{
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: TextsRegular;
+    line-height: 122.5%;
+    width: 568px;
+
+}
+
+/*--------Backgrounds--------*/
+
+.bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.start-ba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../svg/start-baPC.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 606px;
+    height: 332px;
+}
+.authorization-ba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../svg/authorization-baPC.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 606px;
+    height: 394px;
+}
+.home-ba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../svg/home-ba.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 625px;
+    height: 680px;
+}
+.instruction-ba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../svg/instruction-ba.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 648px;
+    height: 810px;
+}
+.question-area{
+    background-color: #292E3B;
+    border-radius: 30px 30px 0px 0px;
+    width: 648px;
+}
+.question-ba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../svg/question-ba.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 648px;
+    height: 466px;
+}
+.question-ba-vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 648px;
+    height: 296px;
+    margin-bottom: 30px;
+    
+}
+.question-ba-vertical input[type=radio]{
+    display: none;
+}
+.question-ba-vertical label {
+	cursor: pointer;
+	user-select: none;
+}
+.question-ba-horizontal{
+    display: flex;
+    align-items: left;
+}
+
+
+/*--------Buttons--------*/
+
+.email{
+    font-size: 28px;
+    margin: 28px 0px 28px 40px;
+}
+.email-input{
+    width: 520px;
+    height: 58px;
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 20px;
+    border-color: #98B3DE;
+    font-size: 40px;
+    background-color: #98B3DE;
+    margin-bottom: 28px;
+    padding: 0;
+
+}
+[type="email"]:focus{
+    outline: none;
+    background-color: #B8D0F5;
+    border-color: #B8D0F5;
+}
+button{
+    background-color: rgb(0,0,0,0);
+    border: 0px;
+    padding: 0px; 
+}
+button:hover .button-fill{
+    fill: #B8D0F5;
+}
+button:active .button-fill{
+    fill: #627DA7;
+}
+.student, .teacher {
+    margin-bottom: 28px;
+}
+.student{
+    margin-top: 28px;
+}
+.cabinet{
+    margin-top: 34px;
+}
+.experiment, .cabinet{
+    margin-bottom: 34px;
+}
+.yes-button{
+    margin-bottom: 28px;
+}
+.back-button{
+    margin-right: 26px;
+}
+.question-ba-vertical input[type=radio]:checked + label .button-fill{
+	fill: #627DA7;
+}
+.question-ba-vertical label:hover .button-fill{
+    fill: #B8D0F5;
+}
+/*----------------Adaptive---------------*/
+
+@media screen and (max-width: 700px){
+
+    /*---------Texts---------*/
+
+    h1,h2{
+        font-size: 40px;
+        
+    }
+    h1{
+        margin-top: 15vh;
+    }
+    .authorization, .home{
+        margin-top: 15vh;
+    }
+    .instruction-text{
+        margin-top: 12.5px;
+        margin-bottom: 33.5px;
+        width: 289px;
+        height: 272.5px;
+        font-size: 15px;
+    }
+    .question-text{
+        margin-top: 12.5px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        width: 284px;
+    }
+
+    /*--------Background---------*/
+
+    .start-ba{
+        background-image: url(../svg/start-baM.svg);
+        width: 303px;
+        height: 166px;
+    }
+    .authorization-ba{
+        background-image: url(../svg/authorization-baM.svg);
+        width: 303px;
+        height: 197px;
+    }
+    .home-ba{
+        background-image: url(../svg/home-baM.svg);
+        width: 312.5px;
+        height: 340px;
+    }
+    .instruction-ba{
+        background-image: url(../svg/instruction-baM.svg);
+        width: 324px;
+        height: 405px; 
+    }
+    .question-area{
+        border-radius: 15px 15px 0px 0px;
+        width: 324px;
+    }
+    .question-ba{
+        background-image: url(../svg/question-baM.svg);
+        width: 324px;
+        height: 234px;
+    }
+
+    /*-------Buttons--------*/
+
+    .student, .teacher {
+        margin-bottom: 14px;
+        width: 275px;
+        height: 62px;
+    }
+    .student{
+        margin-top: 14px;
+    }
+    .start-button{
+        width: 275px;
+        height: 62px;
+    }
+    .email{
+        font-size: 14px;
+        margin: 14px 0px 14px 20px;
+    }
+    .email-input{
+        width: 261px;
+        height: 30px;
+        border-width: 7.5px;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .submit-email-button{
+        width: 275px;
+        height: 58px;
+    }
+    .cabinet{
+        margin-top: 17px;
+    }
+    .experiment, .cabinet{
+        margin-bottom: 15px;
+    }
+    .home-button{
+        width: 277.5px;
+        height: 90px;
+    }
+    .start-test-button{
+        width: 294px;
+        height: 66.5px;
+    }
+    .yes, .no{
+        width: 294px;
+        height: 66.5px;
+    }
+    .back, .next{
+        width: 139.5px;
+        height: 55px;
+    }
+    .yes-button{
+        margin-bottom: 13px;
+    }
+    .back-button{
+        margin-right: 11px;
+    }
+    .question-ba-vertical{
+        width: 324px;
+        height: 148px;
+        margin-bottom: 16px;
+    }
+}
