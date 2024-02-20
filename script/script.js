@@ -100,8 +100,11 @@ btnNo.addEventListener('change', (event) => {
     btnNext.disabled = false
 });
 
-btnBack.addEventListener('click', (event) => {
+btnBack.addEventListener('click', (event, index) => {
     console.log('back')
+    answers[index] = answer
+    renderQuestions(Number(questionNumber.dataset.currentStep) + 1)
+    console.log(answers)
 });
 
 btnNext.addEventListener('click', (event, index) => {
