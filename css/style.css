@@ -2,15 +2,15 @@
 
 @font-face {
     font-family: Headers;
-    src: url(fonts/Jost-SemiBold.ttf);
+    src: url(../fonts/Jost-SemiBold.ttf);
 }
 @font-face {
     font-family: SemiHeaders;
-    src: url(fonts/PTSans-Bold.ttf);
+    src: url(../fonts/PTSans-Bold.ttf);
 }
 @font-face {
     font-family: Texts;
-    src: url(fonts/PTSans-Regular.ttf)
+    src: url(../fonts/PTSans-Regular.ttf)
 }
 
 h1{
