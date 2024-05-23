@@ -1,0 +1,263 @@
+/* ---------------------Fonts--------------------- */
+
+@font-face {
+    font-family: Headers;
+    src: url(../fonts/Jost-SemiBold.ttf);
+}
+@font-face {
+    font-family: SemiHeaders;
+    src: url(../fonts/PTSans-Bold.ttf);
+}
+@font-face {
+    font-family: Texts;
+    src: url(../fonts/PTSans-Regular.ttf)
+}
+
+h1{
+    letter-spacing: 4px;
+    font-family: Headers;
+    font-size: 50px;
+    color: #FFFFFD;
+    margin-left: -250px;
+    white-space: nowrap;
+}
+
+/* ---------------------Body--------------------- */
+
+body{
+    background-color: #1E222C;
+    margin: 0;
+    overflow: hidden;
+}
+.backgr{
+    display: flex;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    height: 17vh;
+    transition: 1s;
+}
+.header-hidden{ 
+    margin-left: 100vw;
+}
+.display-none{
+    display: none;
+}
+.content-area{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    right: 0;
+}
+.text-area{
+    height: 100vh;
+    background-color: #292E3B;
+    color: #FFFFFD;
+    margin-right: 15px;
+    font-family: Texts;
+    transition: 1s;
+    transition-timing-function: ease;
+}
+.text-area-hidden{
+    margin-top: 100vh;
+}
+.mail-area{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 15px;
+    background-color: #292E3B;
+    padding: 10px 15px;
+    color: #FFFFFD;
+    font-family: SemiHeaders;
+    font-size: 17px;
+    top: 0;
+    right: 0;
+}
+.mail-adress{
+    display: flex;
+}
+.c{
+    font-family: Headers;
+    margin-bottom: 4px;
+}
+.color-fill{
+    stroke: #2B78F3;
+}
+.email-icon{
+    margin-left: 10px;
+}
+
+/* ---------------------Texts--------------------- */
+
+.txt{
+    font-size: 23px;
+    margin-left: 3vw;
+    margin-right: 5vw;
+    text-indent: 50px;
+}
+p{
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+li{
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+a{
+    color: #6C8DFF;
+}
+img{
+    margin-left: 3vw;
+}
+.txt-header{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-indent: 0px;
+}
+li{
+    margin-top: 5px;
+}
+.display-flex{
+    display: flex;
+}
+.margin-top{
+    margin-top: 90px;
+}
+.img{
+    width: 500px;
+    height: 500px;
+}
+/* ---------------------Menu--------------------- */
+
+.menu{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 0px 0px 0px 10px;
+    border-color: #2B78F3;
+    width: 15vw;
+    height: 100vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-menu{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 17vh;
+    transition: 1s;
+    transition-timing-function: ease;
+}
+.main-menu-hidden{
+    top: -100vh;
+}
+
+.second-menu{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 17vh;
+    transition: 1s;
+    transition-timing-function: ease;
+}
+.second-menu-hidden{
+    top: 100vh;
+}
+
+
+/* ---------------------MenuButtons--------------------- */
+
+.menu-button{
+    font-family: Headers;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 16px;
+    padding: 12px 25px;
+    background-color: #98B3DE;
+    color: #002A84;
+    width: 12vw;
+    border-radius: 0px 0px 0px 0px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: none;
+}
+.button-line{
+    position: absolute;
+    display: block;
+    background-color: #2B78F3;
+}
+.button-line-bottom{
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    transition: 0.24s;
+    transition-delay: 0.42s;
+    
+}
+.button-line-right{
+    right: 0;
+    bottom: -100%;
+    width: 5px;
+    height: 100%;
+    transition: 0.08s;
+    transition-delay: 0.34s;
+}
+.button-line-top{
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    transition: 0.24s;
+    transition-delay: 0.1s;
+}
+
+.menu-button:hover{
+    color: #2B78F3;
+    .button-line-bottom{
+        left: 0;
+        transition-delay: 0.1s;
+    }
+    .button-line-right{
+        bottom: 0;
+        transition-delay: 0.34s;
+    }
+    .button-line-top {
+        right: 0;
+        transition-delay: 0.42s;
+    }
+}
+
+.menu-button:active{
+    color: #2B78F3;
+}
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"]:checked + label{
+    color: #2B78F3;
+    .button-line-bottom{
+        left: 0;
+    }
+    .button-line-right{
+        bottom: 0;
+    }
+    .button-line-top {
+        right: 0;
+    }
+}
+
+.test-button:checked + div{
+
+    .main-menu{
+        transition: 0.5s;
+        top: -100px;
+    }
+}
